@@ -22,6 +22,6 @@ const App = () => (
     </Switch>
     <Footer />
   </BrowserRouter>
-);
+)
 
-export default App;
+export default App

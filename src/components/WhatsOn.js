@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactEmbeddedGoogleCalendar } from "react-embedded-google-calendar";
-import COFFEE from "../assets/coffee-morning1.jpg";
+import COFFEE from "../images/coffee-morning1.jpg";
 
 const WhatsOn = () => {
   return (

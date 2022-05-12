@@ -9,7 +9,7 @@ const Home = () => {
           <h1>Milburn Village Hall</h1>
           <p>Community and event space</p>
         </div>
-        <img src="../assets/milburn-village-hall.jpg" />
+        <img src="./src/assets/milburn-village-hall.jpg" />
       </section>
       <section id="mission">
         <p>

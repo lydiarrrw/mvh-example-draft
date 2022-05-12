@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
-import { Map, GoogleApiWrapper } from 'google-maps-react'
+import React, { Component } from "react";
+import { Map, GoogleApiWrapper } from "google-maps-react";
 
 const mapStyles = {
-  width: '450px',
-  height: '350px',
-  overflowX: 'hidden',
-  overflowY: 'hidden'
-}
+  width: "450px",
+  height: "350px",
+  overflowX: "hidden",
+  overflowY: "hidden",
+};
 
 const containerStyle = {
-  width: '450px !important',
-  height: '350px',
-  overflowX: 'hidden',
-  overflowY: 'hidden'
-}
+  width: "450px !important",
+  height: "350px",
+  overflowX: "hidden",
+  overflowY: "hidden",
+};
 
 export class MapContainer extends Component {
   render() {
@@ -21,22 +21,20 @@ export class MapContainer extends Component {
       <div>
         <Map
           mapContainerStyle={containerStyle}
-          resetBoundsOnResize = {true}
+          resetBoundsOnResize={true}
           google={this.props.google}
           zoom={14}
           style={mapStyles}
-          initialCenter={
-            {
-              lat: 54.6565,
-              lng: -2.544
-            }
-          }
+          initialCenter={{
+            lat: 54.6565,
+            lng: -2.544,
+          }}
         />
-        </div>
-    )
+      </div>
+    );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBzjnkUph4N3gi3v1w5vN3gOB6FtJY8z-I'
-})(MapContainer)
+  apiKey: process.env.GOOGLE_MAPS_API_KEY,
+})(MapContainer);

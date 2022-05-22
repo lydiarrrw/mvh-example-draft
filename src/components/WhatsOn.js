@@ -1,11 +1,12 @@
 import React from "react";
 import { ReactEmbeddedGoogleCalendar } from "react-embedded-google-calendar";
-import COFFEE from "../images/coffeemorning1.png";
+import COFFEE from "../images/coffeemorning1smaller.png";
 
 const WhatsOn = () => {
   return (
     <main>
       <div className="about-header">
+        console.log({COFFEE})
         <img className="about-header_img" src={COFFEE} />
       </div>
       <div className="content-container">

@@ -7,7 +7,7 @@ const WhatsOn = () => {
   return (
     <main>
       <div className="about-header">
-        <img className="about-header_img" src={COFFEE} />
+        <img className="about-header_img" src={COFFEE} height="70px" />
       </div>
       <div className="content-container">
         <h1>What's On</h1>

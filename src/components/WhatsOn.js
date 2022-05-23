@@ -6,7 +6,6 @@ const WhatsOn = () => {
   return (
     <main>
       <div className="about-header">
-        console.log({COFFEE})
         <img className="about-header_img" src={COFFEE} />
       </div>
       <div className="content-container">

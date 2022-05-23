@@ -1,10 +1,11 @@
 import React from "react";
+import largehall from "../images/large-hall.jpg";
 
 const About = () => {
   return (
     <div>
       <div className="about-header">
-        <img className="about-header_img" src="../assets/large-hall.jpg" />
+        <img className="about-header_img" src={largehall} height="50px" />
       </div>
       <div className="content-container">
         <section>

@@ -8,13 +8,13 @@ const Footer = () => {
           <h4>About</h4>
           <ul>
             <li>
-              <a href="/about">Facilities</a>
+              <a href="/mvh-example-draft/about">Facilities</a>
             </li>
             <li>
-              <a href="/whats-on">News and events</a>
+              <a href="/mvh-example-draft/whats-on">News and events</a>
             </li>
             <li>
-              <a href="/book">Policies</a>
+              <a href="/mvh-example-draft/book">Policies</a>
             </li>
           </ul>
         </div>
@@ -22,13 +22,13 @@ const Footer = () => {
           <h4>Hall Bookings</h4>
           <ul>
             <li>
-              <a href="/what's-on">Calendar</a>
+              <a href="/mvh-example-draft/what's-on">Calendar</a>
             </li>
             <li>
-              <a href="/book">Charges</a>
+              <a href="/mvh-example-draft/book">Charges</a>
             </li>
             <li>
-              <a href="/book">Booking enquiries</a>
+              <a href="/mvh-example-draft/book">Booking enquiries</a>
             </li>
           </ul>
         </div>

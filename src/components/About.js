@@ -1,41 +1,32 @@
 import React from "react";
-import largehall from "../images/large-hall.jpg";
+import largehallheader from "../images/large-hall-small.png";
+import largehall from "../images/empty-hall-whole.jpg";
+import smallhall from "../images/small-hall-comp.png";
 
 const About = () => {
   return (
     <div>
       <div className="about-header">
-        <img className="about-header_img" src={largehall} height="50px" />
+        <img className="about-header_img" src={largehallheader} height="50px" />
       </div>
       <div className="content-container">
         <section>
           <h1>About the hall</h1>
           Milburn Village Hall can be hired as one whole hall (6m x 17.7m), or
-          split into two smaller rooms for hire using the DOOR SYSTEM name.
-          Details on dimensions of these are below.
-          <h2>What's in the hall</h2>
+          split into two smaller rooms for hire using a folding Alco-Beldan
+          partition door. Details on dimensions of these are below.
+          <h2>Facilities</h2>
           <ul>
-            <li>Chairs: 106 (max available)</li>
-            <li>Tables: Xx Gopack tables, table system</li>
-            <li>Stage</li>
+            <li>Comfortable padded chairs</li>
+            <li>6 'lightweight' Gopack tables (seat 6 to a table)</li>
+            <li>3 small Gopack tables</li>
             <li>
-              Projector and sound system (ask on booking for further details)
+              Multi purpose connectable table system, can be used as tables as
+              various sizes and as a stage
             </li>
-            <li>Heating</li>
-            <li>
-              Kitchen
-              <ul>
-                <li>Glasses (tumblers and wine glasses)</li>
-                <li>Cups and saucers</li>
-                <li>Crockery</li>
-                <li>Cutlery</li>
-                <li>Teapots</li>
-                <li>Hot water thingy</li>
-                <li>Big oven</li>
-                <li>Fridge</li>
-                <li>Pots and pans</li>
-              </ul>
-            </li>
+            <li>Projector, screen and fully integrated Kef sound system.</li>
+            <li>Air source heating</li>
+            <li> Fully equipped kitchen</li>
           </ul>
           <h2>Accessibility</h2>
           <p>The hall has the following features:</p>
@@ -49,18 +40,15 @@ const About = () => {
         <div className="about-rooms">
           <section className="room-type">
             <h2>Small Room</h2>
-            <img
-              className="about-rooms_img"
-              src="../assets/milburn-village-hall.jpg"
-            />
+            <img className="about-rooms_img" src={smallhall} height="50px" />
             <p>6m x 3m (6'8" x 9'10") </p>
-            <p>Capacity (no tables) 20/25</p>
+            <p>Capacity 20/25</p>
           </section>
           <section className="room-type">
             <h2>Large Room</h2>
-            <img className="about-rooms_img" src="../assets/whole-hall-2.jpg" />
+            <img className="about-rooms_img" src={largehall} height="50px" />
             <p>Dimensions 6m x 11.7m (6'8" x 38'4")</p>
-            <p>Capacity (no tables) 106</p>
+            <p>Capacity 106</p>
           </section>
         </div>
       </div>

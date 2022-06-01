@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({ sticky }) => {
   return (
     <nav className="navbar">
       <Link className="navbar-logo" to={{ pathname: "/mvh-example-draft" }}>
@@ -9,6 +9,11 @@ const Nav = () => {
       </Link>
       <div className="navbar-menu-container">
         <ul className="nav-menu-options">
+          <li>
+            <Link className="navitem" to={{ pathname: "/mvh-example-draft/" }}>
+              HOME
+            </Link>
+          </li>
           <li>
             <Link
               className="navitem"
@@ -25,9 +30,9 @@ const Nav = () => {
               ABOUT
             </Link>
           </li>
-          <li>
+          {/* <li>
             <a href="#contact">CONTACT</a>
-          </li>
+          </li> */}
           <li>
             <Link
               className="navitem"

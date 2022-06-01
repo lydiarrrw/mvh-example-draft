@@ -1,17 +1,16 @@
 import React from "react";
+import eventimage from "../images/celebration-hall-small.png";
+// import financepolicypdf from "../public/finance-policy-2020.pdf";
 
 const Book = () => {
   return (
     <main>
       <div className="about-header">
-        <img
-          className="about-header_img"
-          src="../assets/celebration-hall.jpeg"
-        />
+        <img className="about-header_img" src={eventimage} height="50px" />
       </div>
       <div className="content-container">
         <div>
-          <h2>Booking terms and charges</h2>
+          <h1>How to book</h1>
           <p>
             The hall can be booked by session or for the whole day. Sessions are
             as follows:
@@ -21,6 +20,7 @@ const Book = () => {
               <li>Evening (6pm to 11pm)</li>
             </ul>
           </p>
+          <h2>Hire charges</h2>
           <table>
             <th colspan="4" className="table-header">
               Hire charges
@@ -71,7 +71,7 @@ const Book = () => {
           </ul>
 
           <div>
-            <h3>Discounts</h3>
+            <h2>Discounts</h2>
             Discounts are available for residents of Milburn Parish Community
             activity groups, Charity and non revenue raising groups and events
             organised by the Hall Committee.
@@ -118,11 +118,11 @@ const Book = () => {
           <h2>Important Documents</h2>
           <div className="book_important-documents">
             <ul>
-              <h4>Booking documents</h4>
+              <h3>Booking documents</h3>
               <li>
-                <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
-                  Booking form
-                </a>
+                {/* <a href={financepolicypdf} download> */}
+                Booking form
+                {/* </a> */}
               </li>
               <li>
                 <a href="/mvh-complaints-policy-july-19.pdf" download>
@@ -132,7 +132,7 @@ const Book = () => {
             </ul>
 
             <ul>
-              <h4>Policies</h4>
+              <h3>Policies</h3>
               <li>
                 <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
                   Data Protection Policy
@@ -150,7 +150,7 @@ const Book = () => {
               </li>
             </ul>
             <ul>
-              <h4>Hall instructions</h4>
+              <h3>Hall instructions</h3>
               <li>
                 <a href="/src/assets/heating-instructions.pdf" download>
                   Heating instructions
@@ -158,7 +158,7 @@ const Book = () => {
               </li>
               <li>
                 <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
-                  Kitchen??
+                  Kitchen
                 </a>
               </li>
             </ul>

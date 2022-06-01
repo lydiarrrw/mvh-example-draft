@@ -1,7 +1,6 @@
 import React from "react";
 import { ReactEmbeddedGoogleCalendar } from "react-embedded-google-calendar";
 import COFFEE from "../images/coffeemorning1smaller.png";
-// import COFFEE from "../images/mvh.jpg";
 
 const WhatsOn = () => {
   return (
@@ -11,20 +10,26 @@ const WhatsOn = () => {
       </div>
       <div className="content-container">
         <h1>What's On</h1>
-        <h2>Community Events</h2>
+        <h2>Our regular activites</h2>
         <ul>
-          <li>Mondays 7.30pm - Badminton Club</li>
-          <li>Thursdays 9.30am - Playgroup</li>
-          <li>Third Thursday of the month - 7.30pm - Handicrafts</li>
-          <li>Last Friday of month - 7pm - Film Club</li>
-          <li>First Saturday of month - 10.30am - Church Coffee Morning</li>
-          <li>Third Saturday of month - 10.30am - Church Coffee Morning</li>
+          <li>Badminton Club</li>
+          <li>Table Tennis Club</li>
+          <li>Film Night </li>
+          <li>Wine Club</li>
+          <li>Playgroup</li>
+          <li>Pub nights</li>
+          <li>Quiz and Games Nights</li>
+          <li>Arts and Crafts Workshops</li>
+          <li>Ceilidhs</li>
+          <li>Coffee Mornings</li>
+          <li>And much more...</li>
         </ul>
         <h2>Calendar of events/Hall availibility</h2>
-        <div>
+        <div className="google-calendar">
+          {/* https://github.com/turrandott/react-embedded-google-calendar#readme */}
           <ReactEmbeddedGoogleCalendar
             publicUrl="https://calendar.google.com/calendar/embed?src=milburnvillagehall%40gmail.com&ctz=Europe%2FLondon"
-            height="500px"
+            height="100%"
             width="100%"
           />
         </div>

@@ -77,9 +77,11 @@ const Book = () => {
 
           <div>
             <h2>Discounts</h2>
-            Discounts are available for residents of Milburn Parish Community
-            activity groups, Charity and non revenue raising groups and events
-            organised by the Hall Committee.
+            <p>
+              Discounts are available for residents of Milburn Parish Community
+              activity groups, Charity and non revenue raising groups and events
+              organised by the Hall Committee.
+            </p>
             <table>
               <th colspan="3" className="table-header">
                 Discounts

@@ -30,7 +30,6 @@
     color: $baby-powder;
     margin: 0.5rem;
     text-align: center;
-    font-size: 3rem;
   }
 
   p {
@@ -53,7 +52,6 @@
     background: $baby-powder;
     padding: 5%;
     margin: 7%;
-    font-size: 1rem;
     text-align: center;
   }
 }
@@ -164,12 +162,13 @@ ul {
       color: $baby-powder;
       margin-left: 1.5rem;
       text-align: left;
-      font-size: 5rem;
+      font-size: 8rem;
     }
 
     p {
       text-align: left;
       margin-left: 1.5rem;
+      font-size: 2rem;
     }
 
     img {
@@ -180,15 +179,6 @@ ul {
   .home-header-title {
     width: 30%;
     margin: 4%;
-
-    h1 {
-      font-size: 5rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
   }
 
   #more-info {

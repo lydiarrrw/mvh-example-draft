@@ -12,9 +12,11 @@ const About = () => {
       <div className="content-container">
         <section>
           <h1>About the hall</h1>
-          Milburn Village Hall can be hired as one whole hall (6m x 17.7m), or
-          split into two smaller rooms for hire using a folding Alco-Beldan
-          partition door. Details on dimensions of these are below.
+          <p>
+            Milburn Village Hall can be hired as one whole hall (6m x 17.7m), or
+            split into two smaller rooms for hire using a folding Alco-Beldan
+            partition door. Details on dimensions of these are below.
+          </p>
           <h2>Facilities</h2>
           <ul>
             <li>Comfortable padded chairs</li>

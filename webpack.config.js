@@ -24,7 +24,17 @@ module.exports = (env) => {
           test: /\.s(a|c)ss$/,
           use: ["style-loader", "css-loader", "sass-loader"],
         },
-        { test: /\.(png|jpe?g|gif|pdf)$/i, use: "file-loader" },
+        {
+          test: /\.(png|svg|jpg|gif|pdf)$/,
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[name].[ext]",
+              },
+            },
+          ],
+        },
       ],
     },
     devServer: {

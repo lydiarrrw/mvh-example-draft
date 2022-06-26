@@ -1,6 +1,11 @@
 import React from "react";
 import eventimage from "../images/celebration-hall-small.png";
-// import financepolicypdf from "../public/finance-policy-2020.pdf";
+import financePolicyPdf from "../../public/finance-policy-2020.pdf";
+import heatingInstructions from "../../public/heating-instructions.pdf";
+import bookingFormAgreement from "../../public/Booking_Form_Agreement.pdf";
+import complaintsPolicy from "../../public/mvh-complaints-policy-2019.pdf";
+import vhDataProtectionPolicy from "../../public/vh_dataProtectionPolicy.pdf";
+import safeguardingStatement from "../../public/safeguardingstatment.pdf";
 
 const Book = () => {
   return (
@@ -120,12 +125,12 @@ const Book = () => {
             <ul>
               <h3>Booking documents</h3>
               <li>
-                {/* <a href={financepolicypdf} download> */}
-                Booking form
-                {/* </a> */}
+                <a href={bookingFormAgreement} target="_blank">
+                  Booking form
+                </a>
               </li>
               <li>
-                <a href="/mvh-complaints-policy-july-19.pdf" download>
+                <a href={bookingFormAgreement} download>
                   Booking conditions
                 </a>
               </li>
@@ -134,17 +139,22 @@ const Book = () => {
             <ul>
               <h3>Policies</h3>
               <li>
-                <a href="/src/assets/vh_dataprotectionpolicy.pdf" download>
+                <a href={vhDataProtectionPolicy} download>
                   Data Protection Policy
                 </a>
               </li>
               <li>
-                <a href="/mvh-complaints-policy-july-19.pdf" download>
+                <a href={complaintsPolicy} download>
                   Complaints Policy
                 </a>
               </li>
               <li>
-                <a href="/src/assets/finance-policy-2020.pdf" download>
+                <a href={financePolicyPdf} download>
+                  Finance Policy
+                </a>
+              </li>
+              <li>
+                <a href={safeguardingStatement} download>
                   Finance Policy
                 </a>
               </li>
@@ -152,7 +162,7 @@ const Book = () => {
             <ul>
               <h3>Hall instructions</h3>
               <li>
-                <a href="/src/assets/heating-instructions.pdf" download>
+                <a href={heatingInstructions} download>
                   Heating instructions
                 </a>
               </li>

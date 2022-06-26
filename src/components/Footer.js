@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer-signup">
+        {/* <div className="footer-signup">
           <form>
             <label htmlFor="email">Sign up for news:</label>
             <div>
@@ -57,7 +57,7 @@ const Footer = () => {
               ></input>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
       <small className="footer_charity">Charity commision number: 523069</small>
     </section>

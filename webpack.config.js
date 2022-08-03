@@ -1,10 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
+const env =
+  process.env.NODE_ENV === "production"
+    ? new webpack.EnvironmentPlugin({ ...process.env })
+    : new Dotenv();
 
-module.exports = (env) => {
+module.exports = (webpackEnv) => {
   const publicPath =
-    env.NODE_ENV === "local"
+    webpackEnv.NODE_ENV === "local"
       ? {
           publicPath: "/",
         }
@@ -47,6 +52,7 @@ module.exports = (env) => {
       historyApiFallback: true,
     },
     plugins: [
+      new Dotenv(),
       new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
         template: "src/index.html",

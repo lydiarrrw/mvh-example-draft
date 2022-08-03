@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  height: 10vh;
+  height: 16vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,6 +23,12 @@
     text-decoration: none;
     color: $chicago;
     font-weight: 700;
+    font-family: "PT Sans", sans-serif;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -40,8 +46,11 @@
 }
 
 .navbar-logo {
-  margin: 1rem;
-  font-weight: 900;
+  margin-top: 1rem;
+}
+
+.navbar-logo-image {
+  height: 6rem;
 }
 
 .navbar-menu-container {
@@ -56,13 +65,56 @@
   margin: 0 1rem 1rem 1rem;
   font-weight: 900;
   list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.navitem-book {
+  background-color: $brunswick-green;
+  height: 3rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 0.2rem solid $brunswick-green;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  .navitem {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+
+    .navitem {
+      color: $brunswick-green;
+    }
+  }
+}
+
+.navitem {
+  &:hover,
+  &:focus {
+    list-style: underline;
+  }
+}
 //////////////////////MEDIA Query/////////////////////////////
 
-@media (min-width: 600px) {
+@media (min-width: 850px) {
   .navbar {
     flex-direction: row;
+    height: 12vh;
+  }
+
+  .navbar-logo {
+    margin: 2rem;
+  }
+
+  .navbar-logo-image {
+    height: 7rem;
   }
 
   .navbar-menu-container {

@@ -2,7 +2,8 @@ import React from "react";
 import eventimage from "../images/celebration-hall-small.png";
 import financePolicyPdf from "../../public/finance-policy-2020.pdf";
 import heatingInstructions from "../../public/heating-instructions.pdf";
-import bookingFormAgreement from "../../public/Booking_Form_Agreement.pdf";
+import infoForUsers from "../../public/Milburn_VH_Info_for_Users.pdf";
+import bookingFormAgreement from "../../public/Milburn_VH_Booking_Form_Agreement.pdf";
 import complaintsPolicy from "../../public/mvh-complaints-policy-2019.pdf";
 import vhDataProtectionPolicy from "../../public/vh_dataProtectionPolicy.pdf";
 import safeguardingStatement from "../../public/safeguardingstatment.pdf";
@@ -132,8 +133,8 @@ const Book = () => {
                 </a>
               </li>
               <li>
-                <a href={bookingFormAgreement} download>
-                  Booking conditions
+                <a href={infoForUsers} download>
+                  Booking information
                 </a>
               </li>
             </ul>

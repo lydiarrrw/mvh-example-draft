@@ -59,7 +59,9 @@ const Footer = () => {
           </form>
         </div> */}
       </div>
-      <small className="footer_charity">Charity commision number: 523069</small>
+      <div className="footer_charity">
+        <small>Charity commision number: 523069</small>
+      </div>
     </section>
   );
 };

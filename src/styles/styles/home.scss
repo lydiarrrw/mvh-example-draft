@@ -40,10 +40,13 @@
 
 .home-header-title {
   margin: 1rem;
+
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 #mission {
-  min-height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +54,9 @@
   p {
     background: $baby-powder;
     padding: 5%;
-    margin: 7%;
+    margin: 6%;
     text-align: center;
+    border-radius: 0.5rem;
   }
 }
 
@@ -74,9 +78,7 @@
 
   .more-info-card {
     background-color: $baby-powder;
-    margin: 1rem auto;
-    height: 80%;
-    width: 80%;
+    margin: 1rem 4rem;
     min-height: 20rem;
     box-shadow: 5px 5px 5px 1px #404040;
     text-align: center;
@@ -130,14 +132,6 @@
   }
 }
 
-.google-map {
-  overflow-x: hidden;
-  width: 500px;
-  height: 350px;
-  position: relative;
-  left: -10%;
-}
-
 ul {
   padding-left: 0;
 }
@@ -149,9 +143,13 @@ ul {
   }
 }
 
+.mapouter {
+  margin-left: 1rem;
+}
+
 //////////////////////MEDIA Query/////////////////////////////
 
-@media (min-width: 600px) {
+@media (min-width: 850px) {
   #home-header {
     height: 70vh;
     display: flex;
@@ -181,6 +179,13 @@ ul {
     margin: 4%;
   }
 
+  #mission {
+    p {
+      padding: 3%;
+      margin: 3%;
+    }
+  }
+
   #more-info {
     flex-direction: row;
 
@@ -192,7 +197,6 @@ ul {
     }
 
     .more-info-card {
-      height: 30%;
       width: 30%;
     }
   }
@@ -206,16 +210,8 @@ ul {
       height: 20rem;
       padding: 5rem 0 5rem 12rem;
       text-align: left;
+      margin-top: 2%;
     }
-  }
-
-  .google-map {
-    overflow-x: hidden;
-    width: 500px;
-    height: 350px;
-    position: relative;
-    left: -10%;
-    top: 3.5rem;
   }
 
   .google-calendar {

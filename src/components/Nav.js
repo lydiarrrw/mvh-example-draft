@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import mvhlogo from "../images/mvh-logo.svg";
+
 const Nav = ({ sticky }) => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
         <Link className="navbar-logo" to={{ pathname: "/mvh-example-draft" }}>
-          Milburn Village Hall
+          <img src={mvhlogo} height="70px" className="navbar-logo-image" />
         </Link>
         <div className="navbar-menu-container">
           <ul className="nav-menu-options">
@@ -37,7 +39,7 @@ const Nav = ({ sticky }) => {
             {/* <li>
             <a href="#contact">CONTACT</a>
           </li> */}
-            <li>
+            <li className="navitem navitem-book">
               <Link
                 className="navitem"
                 to={{ pathname: "/mvh-example-draft/book" }}

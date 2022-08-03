@@ -5,6 +5,13 @@ import newsevents from "../images/reading-hall-board-comp.png";
 import bookhall from "../images/celebration-hall-small.png";
 import abouthall from "../images/coffee-morning2-comp.png";
 
+import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+
+const Map = ReactMapboxGl({
+  accessToken: `${process.env.mapbox}`,
+});
+
 const Home = () => {
   return (
     <main className="parallax">
@@ -61,9 +68,7 @@ const Home = () => {
             <b>CA10 1TL</b>
           </p>
         </div>
-        <div className="google-map">
-          <MapContainer />
-        </div>
+        <map-component></map-component>
       </section>
     </main>
   );

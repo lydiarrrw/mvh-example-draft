@@ -19,6 +19,10 @@
     a {
       text-decoration: none;
       color: $baby-powder;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -72,7 +76,13 @@
   }
 
   .footer_charity {
-    margin: 4.5rem;
+    display: flex;
+    justify-content: center;
+    color: $brunswick-green;
+
+    small {
+      font-size: 1.3rem;
+    }
   }
 
   .input-submit {

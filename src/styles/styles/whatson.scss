@@ -1,0 +1,61 @@
+@import "_variables";
+
+.whats-on-activities {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    align-items: center;
+    min-width: 20rem;
+    max-width: 30rem;
+    background-color: $white;
+    padding: 1rem;
+    margin: 0.7rem;
+    border: 0.2rem $brunswick-green solid;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+
+    h4 {
+      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      cursor: pointer;
+
+      h4 {
+        text-decoration: underline;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.whats-on-svg {
+  height: 5rem;
+  padding-right: 1rem;
+  border-right: 0.1rem solid $brunswick-green;
+}
+
+.google-calendar {
+  border: 0.2rem solid $brunswick-green;
+  padding: 1rem;
+}
+
+#smgc-cal-YhUAQFrSY5awkPWnT7VD-calendar-container
+  .smgc-cal-YhUAQFrSY5awkPWnT7VD-calendar-month-footer {
+  display: none !important;
+}
+
+.smgc-cal-YhUAQFrSY5awkPWnT7VD-event-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin: 1rem !important;
+  text-align: center !important;
+}
